@@ -1,12 +1,10 @@
-__author__ = 'h_hack'
-
+import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-import time
 
 
 def main():
-    contact_name = "Mainframe buddies"
+    contact_name = "Kamal"
     try:
         driver = webdriver.Firefox()
         driver.get("https://web.whatsapp.com/")
@@ -21,12 +19,26 @@ def main():
                 c_b_e.click()
                 input_elements = driver.find_elements_by_class_name("input")
                 text_element = input_elements[1]
-                text_element.send_keys(" Happy diwali Saikat")
-                text_element.clear()
-                check_cbe = False
+                for i in range(1, 2):
+                    text_element.send_keys("Live with this punishment now, It can run anytime :D")
+                    text_element.send_keys(Keys.ENTER)
+                    text_element.clear()
+                attach_element = driver.find_element_by_class_name("icon-clip")
+                attach_element.click()
+                image_element = driver.find_element_by_xpath(
+                    "//input[contains(@data-reactid,'.0.$main.5.0.2.$conversation-header.0.1.$=10.0:2')]")
+                print image_element.get_attribute("type")
+                string1 = "/home/h_hack/Desktop/1.jpg"
+                driver.execute_script("arguments[0].style.display='block';", image_element)
+                image_element.send_keys(string1)
+                d_ctl = driver.find_element_by_class_name("drawer-media")
+                d_ctl.click()
+                send_ele = driver.find_element_by_class_name("btn-l")
+                send_ele.click()
                 break
-    except Exception:
+    except:
         print "some problem"
+
 
 if __name__ == '__main__':
     main()
