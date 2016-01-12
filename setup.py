@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='bot',
+    name='whatsappbot',
     version='0.0.1.0',
     description='whatsapp bot for advertising',
     author='Harshul Jain',
