@@ -21,9 +21,9 @@ pip install whatsappbot
 ```python setup.py install```
 
 ## Excel file format
-| name_part_1 | name_part2 |
-| ----------- | ---------- |
-| harshul     | Jain       |
+| name_part_1 | name_part_2 |
+| ----------- | ----------- |
+| harshul     | Jain        |
 
 ## How to run
 Create Excel file as per above mentioned format
