@@ -9,6 +9,10 @@ virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
+change the prepare your excel file and run
+```
+python main.py
+```
 
 ##How to contribute:
 
