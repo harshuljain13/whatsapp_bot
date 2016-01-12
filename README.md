@@ -22,7 +22,7 @@ pip install whatsappbot
 
 ## How to run
 prepare your excel file and run
-```python main.py```
+```python bot/main.py``` or ```python main.py```
 
 ##How to contribute:
 
