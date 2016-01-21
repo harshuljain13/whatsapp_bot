@@ -6,11 +6,11 @@ import xlrd
 text_ad = "Quotemykaam.com - One stop solution for all your daily service needs \n" \
           "Trusted vendors, Great  offers, Service guarantee"
 
-image_li = ['/home/h_hack/Desktop/quotemykaam/4.jpg']
+image_li = ['quotemykaam/4.jpg']
 contact_name_list = ['Kamal']
 
 ##...............interfacing excel.................................................
-wb = xlrd.open_workbook('/home/h_hack/Desktop/quotemykaam/data.xls')
+wb = xlrd.open_workbook('quotemykaam/data.xls')
 for s in wb.sheets():
     for row in range(s.nrows):
         contact_name_list.append(str(s.cell(row, 0).value) + " " + str(s.cell(row, 1).value))
