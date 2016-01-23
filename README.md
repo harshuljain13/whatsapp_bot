@@ -21,7 +21,7 @@ pip install whatsappbot
 ```python setup.py install```
 
 ## How to run
-#### Prepare Excel file in following format
+``` Prepare Excel file in following format```
 | name_part_1 | name_part_2 |
 | ----------- | ----------- |
 | harshul     | Jain        |
