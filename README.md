@@ -20,14 +20,13 @@ pip install whatsappbot
 #### OR Using setup.py file
 ```python setup.py install```
 
-## Excel file format
+## How to run
+#### Prepare Excel file in following format
 | name_part_1 | name_part_2 |
 | ----------- | ----------- |
 | harshul     | Jain        |
 
-## How to run
-Create Excel file as per above mentioned format
-```python bot/main.py``` or ```python main.py```
+```python bot/main.py```
 
 ##How to contribute:
 
