@@ -27,7 +27,7 @@ setup(
     url='https://github.com/harshul1610/whatsapp_bot',
     install_requires=[
         "selenium==2.48.0",
-        "wheel==0.24.0",
+        "wheel==0.38.1",
         "xlrd==0.9.4"
     ],
     entry_points={
